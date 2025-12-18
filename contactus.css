@@ -1,0 +1,35 @@
+form{
+width: 100%;
+max-width: 600px;
+margin: 0 auto;
+border: 1px solid black;
+border-radius: 5px;
+padding: 20px;
+background-color: lightpink;
+}
+form label{
+color: black;
+font-size: 15px;
+width: 15%;
+display: inline-block;
+}
+form input{
+width: 90%;
+} 
+.formrow{
+display: flex;
+margin-bottom: 10px;
+}
+.formrowsubmitbtn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.formrowsubmitbtn input{
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    background-color: darkred;
+    border-radius: 5px;
+    color: azure;
+}

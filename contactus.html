@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry Code Academy</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <img src="images/strawberry.PNG" alt="Strawberry Logo 1">
+        <a class="brand" href="index.html">Strawberry Code Academy</a>
+        </div>
+        <nav>
+        <ul class="nav">
+            <li class="drop">
+                <a href="index.html">Home &#9662;</a>
+                <ul class="drop-menu">
+                    <li><a href="index.html#about">About</a></li>
+                    <li>
+                        <a href="index.html#courses">Course Modules</a></li>
+                    
+                </ul>
+                <li><a href="course-details.html">Course Details</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+
+            </li>
+            
+             <li class="drop">
+                <a href="contactus.html">Contact &#9662;</a>
+                <ul class="drop-menu">
+                   <li>
+                    <a href="contactus.html#calendar">Calendar</a>
+                   </li>
+                   <li>
+                    <a href="contactus.html#social">Social Media</a>
+                   </li>
+                </ul>
+            </li>
+        
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form">
+        <h1>Contact us</h1>
+        <form id="formValidate">
+            <div class="formrow">
+                <label for="fname">Full Name</label>
+                <input type="text" name="fname" id="fname" required>
+                <span class="error" id="fnameerror"></span>
+            </div>
+            <div class="formrow">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <span class="error" id="emeilerror"></span>
+            </div>
+            <div class="formrow">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" required>
+                <span class="error" id="phoneerror"></span>
+            </div>
+            <div class="formrow">
+                <label for="select">courses</label>
+                <select name="courses" id="courses" required>
+                    <option value="">Select any course</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+            </div>
+            <div class="formrowsubmitbtn">
+                <input type="submit" value="submit"> 
+            </div>
+        </form>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        
+        <p>Strawberry Code Academy &copy; 2025 |   Privacy Policy    |  All Rights Reserved</p>
+         
+    </footer>
+</body>
+</html>
