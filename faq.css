@@ -35,6 +35,7 @@ h2{
 }
 .ui-accordion-header {
   background-color: #f7f7f7;
+  border-radius: 3px solid lightblue;
   color: #333;
   font-size: 18px;
   font-weight: 600;
