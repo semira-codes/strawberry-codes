@@ -1,11 +1,76 @@
-h1{
-    color: white;
-    background-color: #06325c;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+html {
+    scroll-behavior: smooth;
 }
+.contact-hero {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.contactimage{
+    width: 100%;
+    height: 300px;
+    display: block;
+    filter: blur(2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    border-radius: 12px;
+    margin: 10px auto;
+}
+.contact-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+.contact-title {
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translate(-50%, -40%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+.contact-btn {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 28px;
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #E5ADA8;
+    color: darkred;
+    transform: translateX(-50%) scale(1.08);
+}
+
+.form-title {
+    text-align: center;
+    color: #06325c;
+    margin-bottom: 5px;
+}
+
+.form-tagline {
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
 #form{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -13,12 +78,19 @@ h1{
 form{
 width: 100%;
 max-width: 600px;
-margin: 0 auto;
 border: 1px solid black;
-border-radius: 5px;
+border-radius: 12px;
 padding: 20px;
 background-color: #acd7ec;
 }
+#form {
+    display: flex;
+    justify-content: flex-end;   /* moves form to right */
+    padding-right: 110px;         /* space from right edge */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 form label{
 color: black;
 font-size: 15px;
@@ -26,8 +98,20 @@ width: 15%;
 display: inline-block;
 }
 form input{
-width: 90%;
+width: 85%;
 } 
+form textarea {
+    width: 70%;
+    resize: none;
+}
+.formrow input,
+.formrow select,
+.formrow textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
 .formrow{
 display: flex;
 margin-bottom: 10px;
@@ -36,14 +120,17 @@ margin-bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: end;
+   
 }
 .formrowsubmitbtn input{
     width: 100%;
     max-width: 100px;
+    height: 35px;
     text-align: center;
     background-color: darkred;
-    border-radius: 5px;
+    border-radius: 30px;
     color: azure;
+    
 }
 .formrowsubmitbtn input:hover{
     background-color:  #E5ADA8;
@@ -73,5 +160,5 @@ h2{
 /* Hover Effect */
 .social-icons li a:hover i {
     transform: scale(2);
-    color: #E5ADA8;
+    color:#06325c;
 }
