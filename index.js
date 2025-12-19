@@ -4,9 +4,9 @@ $(document).ready(function () {
   $('.courses-wrapper').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: false,      // ✅ arrows off
-    dots: true,         // (chaaho to true, warna false)
-    autoplay: true,     // ✅ autoplay on
+    arrows: false,      
+    dots: true,         
+    autoplay: true,     
     autoplaySpeed: 2500,
     pauseOnHover: true,
     pauseOnFocus: true,
