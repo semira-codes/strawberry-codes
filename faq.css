@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #EFE8D8;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#main-para{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#main-para a{
+    text-decoration: none;
+    color:  darkred;
+    font-weight: bold;
+}
+
+.ui-accordion {
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+.ui-accordion-header {
+  background-color: #f7f7f7;
+  border-radius: 3px solid lightblue;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.ui-accordion-header:hover {
+  background-color: #E5ADA8; 
+}
+.ui-accordion-header-active {
+  background-color: #E5ADA8;
+  color: #000;
+}
+.ui-accordion-content {
+  background-color: #7627;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+  border-left: 3px solid #E5ADA8;
+  border-radius: 0 0 6px 6px;
+}
+.ui-widget-content,
+.ui-widget-header {
+  border: none;
+  background: none;
+}
+@media (max-width: 500px) {
+    .ui-accordion-header {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+    .ui-accordion-content {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
