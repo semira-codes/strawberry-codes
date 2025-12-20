@@ -323,8 +323,65 @@ margin-bottom: 10px;
         padding-right: 0;
     }
 }
+.calendar-container{
+    background-color: #acd7ec;
+    max-width: 900px; 
+    margin: 0 auto; 
+    border: 2px solid black; 
+    border-radius: 12px; 
+    overflow: hidden;
+}
+.calendar-container iframe{
+    border-radius: 12px;
+}
+.calendar-container h2{
+     color: #06325c;
+     margin-bottom: 5px;
+     margin-top: 10px;
+}
+.calendar-container p{
+     color:black;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+  
+}
+/* Subtle shadow for the calendar box */
+.calendar-container {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover effect */
+}
 
+/* Optional: slightly lift on hover */
+.calendar-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .calendar-container {
+    padding: 15px;          /* reduce padding on small screens */
+  }
+
+  .calendar-container p {
+    font-size: 14px;         /* smaller text for mobile */
+  }
+
+  .calendar-container iframe {
+    height: 400px;           /* reduce iframe height on mobile */
+  }
+}
+
+#social{
+    background-color: #acd7ec;
+    width: 85%;
+    max-height: fit-content;
+    border-radius: 12px;
+    align-items: center;
+    margin-top: 5px;
+}
 h2{
+    margin-top: 30px;
     color: #06325c;
     align-items: center;
     display: flex;
