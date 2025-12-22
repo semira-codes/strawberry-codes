@@ -3,7 +3,7 @@ html {
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #EFE8D8;
+    background-color: cornsilk;
 }
 .contact-hero {
     position: relative;
@@ -245,6 +245,17 @@ margin-bottom: 10px;
         width: 100%;
     }
 }
+#calendar{
+     background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #7d7d86 45%,
+    #4c386c 100%
+  );
+  width: 100%;
+  border-radius: 12px;
+  padding: 30px;
+}
 .calendar-container{
     background-color: #acd7ec;
     max-width: 900px; 
@@ -295,18 +306,18 @@ margin-bottom: 10px;
 }
 
 #social{
-    background: linear-gradient(
-    135deg,
-    #acd7ec 30%,
-    #ffffff 50%,
-    #E5ADA8 100%
-  );
+   background: linear-gradient(
+  135deg,
+  #e7e30f,
+  #ffd59e,
+  #f16a1d
+);
     width: 100%;
     min-height: 90px;
     border-radius: 12px;
     align-items: center;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 h2{
     margin-top: 30px;

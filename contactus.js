@@ -20,7 +20,7 @@ $(function() {
             $("#phoneerror").text("");
         }
         if (fname !== "" && email !== "" && phone !=="")
-            alert("thank you for submmitting")
+            alert("thank you for submitting")
     })
 })
     const pupils = document.querySelectorAll(".pupil");
