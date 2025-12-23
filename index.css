@@ -23,7 +23,12 @@ p {
     position: relative;
     overflow: hidden;
     min-height: 420px;
-    background-color: rgb(104, 104, 156);
+    background: linear-gradient(
+  135deg,
+  #e7e30f,
+  #ffd59e,
+  #f16a1d
+);
 }
 
 .image {
@@ -97,11 +102,12 @@ p {
 
 #why-us {
   background: linear-gradient(
-  135deg,
-  #e7e30f,
-  #ffd59e,
-  #f16a1d
-);
+    135deg,
+    #ffffff 0%,
+    #7d7d86 45%,
+    #4c386c 100%
+  );
+
 
   padding: 60px 0;
 }
