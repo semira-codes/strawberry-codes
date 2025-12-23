@@ -1,6 +1,10 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: cornsilk;
+}
 .contact-hero {
     position: relative;
     width: 100%;
@@ -62,6 +66,97 @@ html {
     }
 }
 
+.facebox {
+    background: linear-gradient(
+        135deg,
+        #acd7ec 30%,
+        #ffffff 50%,
+        #E5ADA8 100%
+    ); 
+    width: 400px;
+    padding: 50px;               
+    border-radius: 12px;
+    border: 2px solid #06325c;
+    display: flex;
+    flex-direction: column;      
+    align-items: center;        
+    justify-content: flex-start; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.cute-heading {
+    text-align: center;       
+    font-size: 18px;        
+    color: #06325c;              
+    margin-bottom: 20px;    
+}
+
+
+
+.face {
+    width: 250px;        
+    height: 250px;       
+    background-color: #f4c400;
+    border-radius: 50%;      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: bounce 2s infinite ease-in-out; 
+}
+
+    .eyes {
+      display: flex;
+      gap: 35px;            
+      margin-bottom: 25px;
+    }
+
+    
+    .eye {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    
+    .pupil {
+      width: 15px;
+      height: 15px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      transition: transform 0.05s linear;
+    }
+
+    
+    .mouth {
+      width: 60px;
+      height: 25px;
+      border-bottom: 6px solid black;
+      border-radius: 0 0 30px 30px;
+    }
+
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+.face {
+  grid-column: 1;
+}
+
+#formValidate{
+  grid-column: 2;
+}
+
+
 .form-title {
     text-align: center;
     color: #06325c;
@@ -76,19 +171,21 @@ html {
 }
 form{
 width: 100%;
-max-width: 600px;
-border: 1px solid black;
+min-width: 700px;
+border: 2px solid #06325c;
 border-radius: 12px;
 padding: 20px;
 background-color: #acd7ec;
 }
 #form {
-    display: flex;
-    justify-content: flex-end;  
-    padding-right: 110px;      
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px; 
+  max-width: 1150px; 
+  margin: 60px auto;
 }
+
 
 form label{
 color: black;
@@ -148,11 +245,22 @@ margin-bottom: 10px;
         width: 100%;
     }
 }
+#calendar{
+     background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #7d7d86 45%,
+    #4c386c 100%
+  );
+  width: 100%;
+  border-radius: 12px;
+  padding: 30px;
+}
 .calendar-container{
     background-color: #acd7ec;
     max-width: 900px; 
     margin: 0 auto; 
-    border: 2px solid black; 
+    border: 2px solid #06325c; 
     border-radius: 12px; 
     overflow: hidden;
 }
@@ -198,18 +306,18 @@ margin-bottom: 10px;
 }
 
 #social{
-    background: linear-gradient(
-    135deg,
-    #acd7ec 30%,
-    #ffffff 50%,
-    #E5ADA8 100%
-  );
+   background: linear-gradient(
+  135deg,
+  #e7e30f,
+  #ffd59e,
+  #f16a1d
+);
     width: 100%;
     min-height: 90px;
     border-radius: 12px;
     align-items: center;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 h2{
     margin-top: 30px;

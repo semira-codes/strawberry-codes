@@ -20,6 +20,19 @@ $(function() {
             $("#phoneerror").text("");
         }
         if (fname !== "" && email !== "" && phone !=="")
-            alert("thank you for submmitting")
+            alert("thank you for submitting")
     })
 })
+    const pupils = document.querySelectorAll(".pupil");
+
+    document.addEventListener("mousemove", (e) => {
+      pupils.forEach(pupil => {
+        const eye = pupil.parentElement;
+        const rect = eye.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX);
+        const maxMove = 6; 
+        pupil.style.transform = `translate(${Math.cos(angle) * maxMove}px, ${Math.sin(angle) * maxMove}px)`;
+      });
+    });
