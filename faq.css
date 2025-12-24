@@ -34,7 +34,12 @@ h2{
   font-family: Arial, sans-serif;
 }
 .ui-accordion-header {
-  background-color: #f7f7f7;
+  background-color: linear-gradient(
+    135deg,
+    #e7e30f,
+    #ffd59e,
+    #f16a1d
+  );
   border-radius: 3px solid lightblue;
   color: #333;
   font-size: 18px;
