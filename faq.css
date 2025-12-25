@@ -8,16 +8,6 @@
 body {
     background-color: #EFE8D8;
 }
-.faq-image{
-  position: relative;
-}
-.faq-image img{
-  width: 600px;
-  height: 600px;
-  position: absolute;
-  
- 
-}
 .page-head{
   position: relative;
 }
