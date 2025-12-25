@@ -8,12 +8,25 @@
 body {
     background-color: #EFE8D8;
 }
-h1{
+.faq-image{
+  position: relative;
+}
+.faq-image img{
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  
+ 
+}
+.page-head{
+  position: relative;
+}
+h1{ 
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
-h2{
+h2{ 
     text-align: center;
     margin-bottom: 10px;
 }
@@ -22,25 +35,15 @@ h2{
     margin-top: 30px;
     margin-bottom: 50px;
 }
-#main-para a{
-    text-decoration: none;
-    color:  darkred;
-    font-weight: bold;
-}
 
 .ui-accordion {
   max-width: 800px;
   margin: 40px auto;
   font-family: Arial, sans-serif;
+  
 }
 .ui-accordion-header {
-  background-color: linear-gradient(
-    135deg,
-    #e7e30f,
-    #ffd59e,
-    #f16a1d
-  );
-  border-radius: 3px solid lightblue;
+  background-color: #ffffff;
   color: #333;
   font-size: 18px;
   font-weight: 600;
@@ -49,6 +52,7 @@ h2{
   margin-bottom: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
 }
 .ui-accordion-header:hover {
   background-color: #E5ADA8; 
@@ -80,4 +84,107 @@ h2{
         font-size: 14px;
         padding: 15px;
     }
+}
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.circle1 {
+  width: 500px;
+  height: 500px;
+  background: #ff4d6d;
+  top: 10%;
+  left: 5%;
+}
+
+.circle2 {
+  width: 600px;
+  height: 600px;
+  background: #775d63;
+  bottom: 10%;
+  right: 5%;
+}
+.circle3 {
+  width: 300px;
+  height: 300px;
+  background: #b46679;
+  top: 2%;
+  right: 10%;
+}
+.circle4 {
+  width: 350px;
+  height: 350px;
+  background: #a16c7a;
+  bottom: 10%;
+  left: 2%;
+}
+.bottom{
+  text-align: center;
+  padding: 5px;
+  margin-top: 40px;
+}
+.bottom button{
+  text-align: center;
+  padding: 12px 28px;
+  background-color: darkred;
+  border-radius: 25px;
+  
+}
+.bottom button a{
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  
+}
+.faq-section {
+  display: flex;
+  gap: 60px;
+  padding: 80px 10%;
+  align-items: flex-start;
+}
+
+.faq-left {
+  width: 35%;
+}
+
+.faq-left h4 {
+  color: #8b0000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.faq-left h2 {
+  font-size: 32px;
+  margin: 10px 40px;
+}
+
+.faq-left p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.faq-left ul {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.faq-left li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.faq-right {
+  width: 65%;
+}
+
+.faq-right h1 {
+  font-size: 36px;
+}
+
+.faq-subtitle {
+  margin-bottom: 30px;
+  color: #555;
 }
