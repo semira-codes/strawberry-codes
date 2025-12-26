@@ -54,5 +54,11 @@ h2{
   border: 5px solid #ffffff;
 
 }
+@media (max-width:768px) {
+  h2{
+    text-align: center;
+    margin-left: 0;
+  }
 
+}
 

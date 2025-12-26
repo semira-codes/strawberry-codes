@@ -1,4 +1,3 @@
-
 $('.my-slider').slick({
   centerMode: true,
   centerPadding: '60px',
