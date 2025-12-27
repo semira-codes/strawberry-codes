@@ -3,7 +3,7 @@ html {
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: cornsilk;
+    background-color: #EFE8D8;
 }
 .contact-hero {
     position: relative;
@@ -73,7 +73,8 @@ body{
         #ffffff 50%,
         #E5ADA8 100%
     ); 
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 50px;               
     border-radius: 12px;
     border: 2px solid #06325c;
@@ -219,6 +220,14 @@ margin-bottom: 10px;
     justify-content: end;
    
 }
+.error {
+    color: #d93025;         
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+    font-weight: 500;
+}
+
 .formrowsubmitbtn input{
     width: 100%;
     max-width: 100px;
@@ -234,6 +243,9 @@ margin-bottom: 10px;
     color: darkred;
 }
 @media (max-width: 768px) {
+     .facebox {
+        margin: 0 auto;
+    }
     #form {
         justify-content: center;
         padding-right: 0;
@@ -244,6 +256,14 @@ margin-bottom: 10px;
     form label, form input, form select, form textarea {
         width: 100%;
     }
+    #form {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+ .error {
+        font-size: 12px;
+}
+
 }
 #calendar{
      background: linear-gradient(
