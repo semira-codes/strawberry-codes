@@ -13,7 +13,8 @@ body {
   width: 100%;
 }
 
-.image-container img {
+
+.gallery-page .image-container img {
   width: 100%;
   height: 600px;
 }
