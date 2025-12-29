@@ -118,21 +118,19 @@ h2{
   padding: 5px;
   margin-top: 40px;
 }
-.bottom button{
-  text-align: center;
-  padding: 12px 28px;
+.bottom .btn{
+  display: inline-block;
+  padding: 10px 40px;
   background-color: darkred;
-  border-radius: 25px;
-  width: fit-content;
-  max-width: 100%;
-  padding: 12px 20px;
-  font-size: 16px;
-}
-.bottom button a{
-  text-decoration: none;
   color: white;
-  font-style: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
   
+}
+.btn:hover{
+  background-color: #E5ADA8;
+  color: darkred;
 }
 .faq-section {
   display: flex;
@@ -212,9 +210,10 @@ h2{
 
 }
 @media (max-width: 480px) {
-  .faq-left button {
+  .faq-left .btn {
     width: 100%;
     text-align: center;
+    padding: 10px 10px;
   }
   .faq-left h2 {
     font-size: 24px;
